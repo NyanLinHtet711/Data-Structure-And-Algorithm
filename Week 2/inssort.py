@@ -1,23 +1,22 @@
 
 import time
 
-a = list(map(int, input().split()))
+n = list(map(int, input().split()))
 
-n = len(a)
+l = len(a)
 
 st = time.process_time()
 
-# write the insertion sort code into this segment
 
-for i in range(1,n):
-    temp = a[i]
+for i in range(1,l):
+    temp = n[i]
     j = i-1
-    while j >= 0 and a[j] > temp:
-        a[j+1] = a[j]
+    while j >= 0 and n[j] > temp:
+        n[j+1] = n[j]
         j -= 1
-    a[j+1] = temp
+    n[j+1] = temp
     
 et = time.process_time()
 
-print(a)
+print(n)
 print(et-st)
