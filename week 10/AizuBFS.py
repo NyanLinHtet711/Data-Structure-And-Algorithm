@@ -6,7 +6,7 @@ d = [-1]*n
 p = [None]*n
 
 s = adj_list[0][0] - 1
-color[s] = "GREY"
+color[s] = "Brown"
 d[s] = 0
 p[s] = None
 
@@ -18,7 +18,7 @@ while Q:
     for i in range(adj_list[u][1]):
         v = adj_list[u][i+2] - 1
         if color[v] == "WHITE":
-            color[v] = "GREY"
+            color[v] = "Brown"
             d[v] = d[u] + 1
             p[v] = u
             Q.append((v))
