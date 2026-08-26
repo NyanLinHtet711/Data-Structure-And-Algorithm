@@ -26,4 +26,4 @@ while Q:
     color[u] = "BLACK"
 
 for v in range(n):
-    print(*(v+1,d[v]))
+    print(*(v+1,d[v]
