@@ -18,7 +18,7 @@ class DisjointSets:
         if self.rank[a] < self.rank[b]:
             self.p[a] = b
         else:
-            # by default;
+
             # a will become the parent of b
             # and the rank of a will be incremented by 1
             self.p[b] = a

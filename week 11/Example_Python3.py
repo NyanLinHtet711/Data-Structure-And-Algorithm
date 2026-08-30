@@ -1,6 +1,3 @@
-
-# Python 3 class
-
 class item:
     def __init__(self):
         self.p = None
